@@ -1,0 +1,24 @@
+{
+  "name": "FORME — Премиальный женский фитнес-клуб",
+  "short_name": "FORME",
+  "description": "Приватный премиальный фитнес-клуб для женщин в Алматы",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#1A1714",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["fitness", "health", "lifestyle"],
+  "lang": "ru"
+}
