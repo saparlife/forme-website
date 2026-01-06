@@ -30,7 +30,7 @@ export default function Footer() {
             <div>
               <p className="text-elegant text-[#B59F7E] mb-6">Навигация</p>
               <ul className="space-y-4">
-                {['О клубе', 'Услуги', 'Преимущества', 'Отзывы', 'Контакты'].map((item) => (
+                {['О клубе', 'Услуги', 'Преимущества', 'Контакты'].map((item) => (
                   <li key={item}>
                     <Link
                       href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -48,13 +48,13 @@ export default function Footer() {
               <p className="text-elegant text-[#B59F7E] mb-6">Контакты</p>
               <ul className="space-y-4 text-sm">
                 <li>
-                  <a href="tel:+77002502222" className="text-white/40 hover:text-[#B59F7E] transition-colors">
-                    +7 700 250 2222
+                  <a href="tel:+77022222566" className="text-white/40 hover:text-[#B59F7E] transition-colors">
+                    +7 702 222 25 66
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:info@forme.kz" className="text-white/40 hover:text-[#B59F7E] transition-colors">
-                    info@forme.kz
+                  <a href="mailto:Forme.gym@list.ru" className="text-white/40 hover:text-[#B59F7E] transition-colors">
+                    Forme.gym@list.ru
                   </a>
                 </li>
                 <li className="text-white/40">
@@ -69,7 +69,7 @@ export default function Footer() {
               <p className="text-elegant text-[#B59F7E] mb-6">Следите за нами</p>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/forme.kz"
+                  href="https://www.instagram.com/forme.women"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 border border-white/10 flex items-center justify-center text-white/40 hover:text-[#B59F7E] hover:border-[#B59F7E] transition-all"
@@ -79,7 +79,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://wa.me/77002502222"
+                  href="https://wa.me/77022222566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 border border-white/10 flex items-center justify-center text-white/40 hover:text-[#B59F7E] hover:border-[#B59F7E] transition-all"

@@ -27,7 +27,7 @@ export default function Header({ variant = 'dark' }: HeaderProps) {
     { href: '#about', label: 'О клубе' },
     { href: '#services', label: 'Услуги' },
     { href: '#benefits', label: 'Преимущества' },
-    { href: '#testimonials', label: 'Отзывы' },
+    // { href: '#testimonials', label: 'Отзывы' },
     { href: '#location', label: 'Контакты' },
   ];
 
@@ -82,7 +82,7 @@ export default function Header({ variant = 'dark' }: HeaderProps) {
               Войти
             </a>
             <a
-              href="https://wa.me/77002502222"
+              href="https://wa.me/77022222566"
               target="_blank"
               rel="noopener noreferrer"
               className={`px-5 py-2.5 text-elegant transition-all duration-300 ${
@@ -136,7 +136,7 @@ export default function Header({ variant = 'dark' }: HeaderProps) {
             ))}
             <div className="flex gap-6 mt-8">
               <a
-                href="https://instagram.com/forme.kz"
+                href="https://www.instagram.com/forme.women"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-elegant text-[#B59F7E]"
@@ -144,7 +144,7 @@ export default function Header({ variant = 'dark' }: HeaderProps) {
                 Instagram
               </a>
               <a
-                href="https://wa.me/77002502222"
+                href="https://wa.me/77022222566"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-elegant text-[#B59F7E]"

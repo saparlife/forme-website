@@ -48,18 +48,18 @@ export default function Location() {
                 </div>
                 <div>
                   <p className="text-elegant text-[#B59F7E] mb-2">Связаться</p>
-                  <a href="tel:+77002502222" className="text-[#1A1714] text-lg hover:text-[#B59F7E] transition-colors block">
-                    +7 700 250 2222
+                  <a href="tel:+77022222566" className="text-[#1A1714] text-lg hover:text-[#B59F7E] transition-colors block">
+                    +7 702 222 25 66
                   </a>
-                  <a href="mailto:info@forme.kz" className="text-[#1A1714]/60 hover:text-[#B59F7E] transition-colors">
-                    info@forme.kz
+                  <a href="mailto:Forme.gym@list.ru" className="text-[#1A1714]/60 hover:text-[#B59F7E] transition-colors">
+                    Forme.gym@list.ru
                   </a>
                 </div>
               </div>
 
               <div className="reveal flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/77002502222"
+                  href="https://wa.me/77022222566"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-premium"
@@ -76,7 +76,7 @@ export default function Location() {
                   <p className="text-elegant text-[#B59F7E] mb-6">Социальные сети</p>
                   <div className="flex gap-6">
                     <a
-                      href="https://instagram.com/forme.kz"
+                      href="https://www.instagram.com/forme.women"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/50 hover:text-[#B59F7E] transition-colors text-elegant"
@@ -84,7 +84,7 @@ export default function Location() {
                       Instagram
                     </a>
                     <a
-                      href="https://wa.me/77002502222"
+                      href="https://wa.me/77022222566"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/50 hover:text-[#B59F7E] transition-colors text-elegant"

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | FORME",
   },
   description:
-    "Приватный премиальный фитнес-клуб для женщин в ЖК Metropole, Алматы. Персональные тренировки на оборудовании TechnoGym. Никаких камер, полная приватность. Записаться: +7 700 250 2222",
+    "Приватный премиальный фитнес-клуб для женщин в ЖК Metropole, Алматы. Персональные тренировки на оборудовании TechnoGym. Никаких камер, полная приватность. Записаться: +7 702 222 25 66",
   keywords: [
     "фитнес клуб Алматы",
     "женский фитнес",
@@ -106,8 +106,8 @@ const jsonLd = {
   description:
     "Приватный премиальный фитнес-клуб для женщин в Алматы. Персональные тренировки на оборудовании TechnoGym.",
   url: "https://forme.kz",
-  telephone: "+77002502222",
-  email: "info@forme.kz",
+  telephone: "+77022222566",
+  email: "Forme.gym@list.ru",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Аль-Фараби, 41/7, блок 7",
@@ -146,8 +146,8 @@ const jsonLd = {
     { "@type": "LocationFeatureSpecification", name: "Sauna" },
   ],
   sameAs: [
-    "https://instagram.com/forme.kz",
-    "https://wa.me/77002502222",
+    "https://www.instagram.com/forme.women",
+    "https://wa.me/77022222566",
   ],
 };
 

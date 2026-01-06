@@ -61,7 +61,7 @@ export default function Hero() {
           {/* CTA */}
           <div className={`flex flex-col sm:flex-row gap-4 ${loaded ? 'animate-fade-up delay-400' : 'opacity-0'}`}>
             <a
-              href="https://wa.me/77002502222"
+              href="https://wa.me/77022222566"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-premium"
@@ -98,11 +98,11 @@ export default function Hero() {
 
           {/* Social */}
           <div className={`hidden md:flex gap-6 ${loaded ? 'animate-fade-up delay-500' : 'opacity-0'}`}>
-            <a href="https://instagram.com/forme.kz" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/forme.women" target="_blank" rel="noopener noreferrer"
               className="text-white/40 hover:text-[#B59F7E] transition-colors text-elegant">
               Instagram
             </a>
-            <a href="https://wa.me/77002502222" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/77022222566" target="_blank" rel="noopener noreferrer"
               className="text-white/40 hover:text-[#B59F7E] transition-colors text-elegant">
               WhatsApp
             </a>
