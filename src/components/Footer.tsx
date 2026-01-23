@@ -2,9 +2,23 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Dictionary } from '@/i18n/get-dictionary';
+import type { Locale } from '@/i18n/config';
 
-export default function Footer() {
+interface FooterProps {
+  dict: Dictionary;
+  locale: Locale;
+}
+
+export default function Footer({ dict, locale }: FooterProps) {
   const currentYear = new Date().getFullYear();
+
+  const navLinks = [
+    { href: '#about', label: dict.nav.about },
+    { href: '#services', label: dict.nav.services },
+    { href: '#benefits', label: dict.nav.benefits },
+    { href: '#location', label: dict.nav.contacts },
+  ];
 
   return (
     <footer className="bg-[#1A1714] pt-20 pb-8">
@@ -22,21 +36,21 @@ export default function Footer() {
                 className="h-6 w-auto brightness-0 invert mb-6"
               />
               <p className="text-white/40 text-sm leading-relaxed">
-                Приватное премиальное фитнес-пространство для женщин в Алматы.
+                {dict.footer.description}
               </p>
             </div>
 
             {/* Navigation */}
             <div>
-              <p className="text-elegant text-[#B59F7E] mb-6">Навигация</p>
+              <p className="text-elegant text-[#B59F7E] mb-6">{dict.footer.navigation}</p>
               <ul className="space-y-4">
-                {['О клубе', 'Услуги', 'Преимущества', 'Контакты'].map((item) => (
-                  <li key={item}>
+                {navLinks.map((item) => (
+                  <li key={item.href}>
                     <Link
-                      href={`#${item.toLowerCase().replace(' ', '-')}`}
+                      href={item.href}
                       className="text-white/40 text-sm hover:text-[#B59F7E] transition-colors"
                     >
-                      {item}
+                      {item.label}
                     </Link>
                   </li>
                 ))}
@@ -45,7 +59,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <p className="text-elegant text-[#B59F7E] mb-6">Контакты</p>
+              <p className="text-elegant text-[#B59F7E] mb-6">{dict.footer.contacts}</p>
               <ul className="space-y-4 text-sm">
                 <li>
                   <a href="tel:+77022222566" className="text-white/40 hover:text-[#B59F7E] transition-colors">
@@ -66,7 +80,7 @@ export default function Footer() {
 
             {/* Social */}
             <div>
-              <p className="text-elegant text-[#B59F7E] mb-6">Следите за нами</p>
+              <p className="text-elegant text-[#B59F7E] mb-6">{dict.footer.followUs}</p>
               <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com/forme.women"
@@ -95,14 +109,14 @@ export default function Footer() {
           {/* Bottom */}
           <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/30 text-xs">
-              &copy; {currentYear} FORME. Все права защищены.
+              &copy; {currentYear} FORME. {dict.footer.rights}
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
-                Политика конфиденциальности
+                {dict.footer.privacy}
               </a>
               <a href="#" className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
-                Договор оферты
+                {dict.footer.terms}
               </a>
             </div>
           </div>

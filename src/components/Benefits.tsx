@@ -2,8 +2,13 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import type { Dictionary } from '@/i18n/get-dictionary';
 
-export default function Benefits() {
+interface BenefitsProps {
+  dict: Dictionary;
+}
+
+export default function Benefits({ dict }: BenefitsProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -26,24 +31,24 @@ export default function Benefits() {
 
   const benefits = [
     {
-      title: 'Приватность',
-      description: 'Никаких телефонов в зале. Тренируйтесь без страха попасть в чьи-то сторис.',
+      title: dict.benefits.benefit1.title,
+      description: dict.benefits.benefit1.description,
     },
     {
-      title: 'TechnoGym',
-      description: 'Премиальное оборудование мирового лидера. Кардио и силовая зоны.',
+      title: dict.benefits.benefit2.title,
+      description: dict.benefits.benefit2.description,
     },
     {
-      title: 'Персональный подход',
-      description: 'Опытные тренеры создадут программу под ваши цели и особенности.',
+      title: dict.benefits.benefit3.title,
+      description: dict.benefits.benefit3.description,
     },
     {
-      title: 'Детская зона',
-      description: 'Уголок для детей с няней — тренируйтесь спокойно.',
+      title: dict.benefits.benefit4.title,
+      description: dict.benefits.benefit4.description,
     },
     {
-      title: 'Wellness',
-      description: 'Парная, душевые, уютные раздевалки для полного комфорта.',
+      title: dict.benefits.benefit5.title,
+      description: dict.benefits.benefit5.description,
     },
   ];
 
@@ -54,7 +59,7 @@ export default function Benefits() {
         <div className="relative h-[50vh] lg:h-auto bg-[#B59F7E]/20">
           <Image
             src="/images/technogym.jpg"
-            alt="TechnoGym оборудование в FORME"
+            alt="TechnoGym equipment at FORME"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -63,8 +68,8 @@ export default function Benefits() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1A1714]/60 via-transparent to-transparent" />
           {/* Floating Badge */}
           <div className="absolute bottom-8 left-8 right-8 glass p-6">
-            <p className="text-white text-elegant mb-2">Премиум оборудование</p>
-            <p className="text-white/70 text-sm">TechnoGym — мировой лидер фитнес-индустрии</p>
+            <p className="text-white text-elegant mb-2">{dict.benefits.premiumEquipment}</p>
+            <p className="text-white/70 text-sm">{dict.benefits.technoGymDesc}</p>
           </div>
         </div>
 
@@ -73,11 +78,11 @@ export default function Benefits() {
           <div className="w-full max-w-xl">
             <div className="reveal flex items-center gap-4 mb-8">
               <div className="line-accent" />
-              <span className="text-elegant text-[#B59F7E]">Преимущества</span>
+              <span className="text-elegant text-[#B59F7E]">{dict.benefits.label}</span>
             </div>
 
             <h2 className="reveal heading-lg text-[#1A1714] mb-12">
-              Почему выбирают <span className="gradient-text">FORME</span>
+              {dict.benefits.title} <span className="gradient-text">{dict.benefits.titleAccent}</span>
             </h2>
 
             <div className="space-y-0">

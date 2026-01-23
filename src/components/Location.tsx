@@ -1,8 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import type { Dictionary } from '@/i18n/get-dictionary';
 
-export default function Location() {
+interface LocationProps {
+  dict: Dictionary;
+}
+
+export default function Location({ dict }: LocationProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -32,22 +37,22 @@ export default function Location() {
             <div>
               <div className="reveal flex items-center gap-4 mb-8">
                 <div className="line-accent" />
-                <span className="text-elegant text-[#B59F7E]">Контакты</span>
+                <span className="text-elegant text-[#B59F7E]">{dict.location.label}</span>
               </div>
 
               <h2 className="reveal heading-lg text-[#1A1714] mb-8">
-                Начните свой путь<br />
-                <span className="gradient-text">к результату</span>
+                {dict.location.title}<br />
+                <span className="gradient-text">{dict.location.titleAccent}</span>
               </h2>
 
               <div className="reveal space-y-8 mb-12">
                 <div>
-                  <p className="text-elegant text-[#B59F7E] mb-2">Адрес</p>
-                  <p className="text-[#1A1714] text-lg">ЖК Metropole</p>
-                  <p className="text-[#1A1714]/60">Аль-Фараби, 41/7, блок 7<br />Алматы, Казахстан</p>
+                  <p className="text-elegant text-[#B59F7E] mb-2">{dict.location.addressLabel}</p>
+                  <p className="text-[#1A1714] text-lg">{dict.location.addressName}</p>
+                  <p className="text-[#1A1714]/60 whitespace-pre-line">{dict.location.addressFull}</p>
                 </div>
                 <div>
-                  <p className="text-elegant text-[#B59F7E] mb-2">Связаться</p>
+                  <p className="text-elegant text-[#B59F7E] mb-2">{dict.location.contactLabel}</p>
                   <a href="tel:+77022222566" className="text-[#1A1714] text-lg hover:text-[#B59F7E] transition-colors block">
                     +7 702 222 25 66
                   </a>
@@ -64,7 +69,7 @@ export default function Location() {
                   rel="noopener noreferrer"
                   className="btn-premium"
                 >
-                  Записаться на тренировку
+                  {dict.location.bookTraining}
                 </a>
               </div>
             </div>
@@ -73,7 +78,7 @@ export default function Location() {
             <div className="reveal">
               <div className="bg-[#1A1714] p-10 md:p-16">
                 <div className="mb-12">
-                  <p className="text-elegant text-[#B59F7E] mb-6">Социальные сети</p>
+                  <p className="text-elegant text-[#B59F7E] mb-6">{dict.location.socialLabel}</p>
                   <div className="flex gap-6">
                     <a
                       href="https://www.instagram.com/forme.women"
@@ -95,20 +100,20 @@ export default function Location() {
                 </div>
 
                 <div className="mb-12">
-                  <p className="text-elegant text-[#B59F7E] mb-6">Часы работы</p>
+                  <p className="text-elegant text-[#B59F7E] mb-6">{dict.location.hoursLabel}</p>
                   <div className="space-y-2 text-white/50">
-                    <p>Пн — Пт: 07:00 — 22:00</p>
-                    <p>Сб — Вс: 09:00 — 20:00</p>
+                    <p>{dict.location.weekdays}</p>
+                    <p>{dict.location.weekends}</p>
                   </div>
                 </div>
 
                 <a
-                  href="https://maps.google.com/?q=ЖК+Metropole+Аль-Фараби+41/7"
+                  href="https://go.2gis.com/0oeQS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-outline-premium text-white border-white/20 hover:bg-white hover:text-[#1A1714] w-full justify-center"
                 >
-                  Открыть карту
+                  {dict.location.openMap}
                 </a>
               </div>
             </div>

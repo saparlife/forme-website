@@ -2,8 +2,13 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import type { Dictionary } from '@/i18n/get-dictionary';
 
-export default function Hero() {
+interface HeroProps {
+  dict: Dictionary;
+}
+
+export default function Hero({ dict }: HeroProps) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -40,7 +45,7 @@ export default function Hero() {
           {/* Label */}
           <div className={`flex items-center gap-4 mb-8 ${loaded ? 'animate-fade-up' : 'opacity-0'}`}>
             <div className="w-12 h-px bg-[#B59F7E]" />
-            <span className="text-elegant text-[#B59F7E] uppercase tracking-widest text-sm">Premium Women&apos;s Fitness</span>
+            <span className="text-elegant text-[#B59F7E] uppercase tracking-widest text-sm">{dict.hero.label}</span>
           </div>
 
           {/* Main Title */}
@@ -50,12 +55,12 @@ export default function Hero() {
 
           {/* Tagline */}
           <p className={`heading-md text-white/80 font-light mb-4 ${loaded ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
-            Результат. Комфорт. Приватность.
+            {dict.hero.tagline}
           </p>
 
           {/* Description */}
           <p className={`text-white/50 text-lg max-w-xl mb-12 ${loaded ? 'animate-fade-up delay-300' : 'opacity-0'}`}>
-            Приватные персональные тренировки в премиальном пространстве на Аль-Фараби
+            {dict.hero.description}
           </p>
 
           {/* CTA */}
@@ -66,7 +71,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="btn-premium"
             >
-              <span>Записаться</span>
+              <span>{dict.hero.book}</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -75,7 +80,7 @@ export default function Hero() {
               href="#about"
               className="btn-outline-premium text-white border-white/30 hover:bg-white hover:text-[#1A1714]"
             >
-              Узнать больше
+              {dict.hero.learnMore}
             </a>
           </div>
         </div>
@@ -86,13 +91,13 @@ export default function Hero() {
         <div className="flex justify-between items-end px-6 md:px-16 lg:px-24 pb-8">
           {/* Location */}
           <div className={`hidden md:block ${loaded ? 'animate-fade-up delay-500' : 'opacity-0'}`}>
-            <p className="text-elegant text-white/40 mb-2">Локация</p>
-            <p className="text-white/70 text-sm">ЖК Metropole, Аль-Фараби 41/7</p>
+            <p className="text-elegant text-white/40 mb-2">{dict.hero.location}</p>
+            <p className="text-white/70 text-sm">{dict.hero.address}</p>
           </div>
 
           {/* Scroll Indicator */}
           <div className={`flex flex-col items-center gap-3 ${loaded ? 'animate-fade-up delay-600' : 'opacity-0'}`}>
-            <span className="text-elegant text-white/40">Scroll</span>
+            <span className="text-elegant text-white/40">{dict.hero.scroll}</span>
             <div className="w-px h-16 bg-gradient-to-b from-[#B59F7E] to-transparent" />
           </div>
 

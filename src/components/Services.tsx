@@ -1,8 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import type { Dictionary } from '@/i18n/get-dictionary';
 
-export default function Services() {
+interface ServicesProps {
+  dict: Dictionary;
+}
+
+export default function Services({ dict }: ServicesProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -26,21 +31,21 @@ export default function Services() {
   const services = [
     {
       number: '01',
-      title: 'Персональный тренинг',
-      description: 'Индивидуальная программа под ваши цели: снижение веса, набор мышечной массы, укрепление здоровья или восстановление.',
-      features: ['Персональный тренер', 'Индивидуальная программа', 'Отслеживание прогресса'],
+      title: dict.services.service1.title,
+      description: dict.services.service1.description,
+      features: [dict.services.service1.feature1, dict.services.service1.feature2, dict.services.service1.feature3],
     },
     {
       number: '02',
-      title: 'Премиум абонементы',
-      description: 'Гибкие варианты посещения с полным доступом к залу TechnoGym и всем удобствам клуба.',
-      features: ['Оборудование TechnoGym', 'Wellness-зона', 'Свободный график'],
+      title: dict.services.service2.title,
+      description: dict.services.service2.description,
+      features: [dict.services.service2.feature1, dict.services.service2.feature2, dict.services.service2.feature3],
     },
     {
       number: '03',
-      title: 'Детская зона',
-      description: 'Пока вы тренируетесь, ваш ребёнок в комфорте и безопасности под присмотром няни.',
-      features: ['Профессиональная няня', 'Безопасное пространство', 'Развивающие игры'],
+      title: dict.services.service3.title,
+      description: dict.services.service3.description,
+      features: [dict.services.service3.feature1, dict.services.service3.feature2, dict.services.service3.feature3],
     },
   ];
 
@@ -55,11 +60,11 @@ export default function Services() {
           <div className="text-center mb-20">
             <div className="reveal flex items-center justify-center gap-4 mb-8">
               <div className="line-accent" />
-              <span className="text-elegant text-[#B59F7E]">Услуги</span>
+              <span className="text-elegant text-[#B59F7E]">{dict.services.label}</span>
               <div className="line-accent" />
             </div>
             <h2 className="reveal heading-lg text-white">
-              Что мы предлагаем
+              {dict.services.title}
             </h2>
           </div>
 

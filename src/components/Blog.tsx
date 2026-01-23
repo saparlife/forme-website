@@ -3,7 +3,10 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Dictionary } from '@/i18n/get-dictionary';
+import type { Locale } from '@/i18n/config';
 
+// Blog posts remain in Russian for now (will be managed via admin panel later)
 const blogPosts = [
   {
     id: 1,
@@ -12,7 +15,6 @@ const blogPosts = [
     excerpt: 'Многие мамы сталкиваются с вопросом: как найти время на себя, когда дома маленький ребёнок? Наши клиентки делятся своим опытом.',
     image: '/images/blog-materinstvo.jpg',
     date: '10 ноября, 2025',
-    category: 'Fitness',
   },
   {
     id: 2,
@@ -21,7 +23,6 @@ const blogPosts = [
     excerpt: 'Силовые тренировки — это не про «накачаться». Это про здоровье костей, ускорение метаболизма и красивый рельеф тела.',
     image: '/images/blog-kardio.webp',
     date: '10 ноября, 2025',
-    category: 'Fitness',
   },
   {
     id: 3,
@@ -30,11 +31,15 @@ const blogPosts = [
     excerpt: 'Вернуться в спорт после паузы бывает сложно. Рассказываем, как это сделать правильно и без травм.',
     image: '/images/blog-pereryv.jpg',
     date: '10 ноября, 2025',
-    category: 'Fitness',
   },
 ];
 
-export default function Blog() {
+interface BlogProps {
+  dict: Dictionary;
+  locale: Locale;
+}
+
+export default function Blog({ dict, locale }: BlogProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -63,10 +68,10 @@ export default function Blog() {
           <div className="mb-16">
             <div className="reveal flex items-center gap-4 mb-6">
               <div className="line-accent" />
-              <span className="text-elegant text-[#B59F7E]">Блог</span>
+              <span className="text-elegant text-[#B59F7E]">{dict.blog.label}</span>
             </div>
             <h2 className="reveal heading-lg text-[#1A1714]">
-              Наш <span className="gradient-text">блог</span>
+              {dict.blog.title} <span className="gradient-text">{dict.blog.titleAccent}</span>
             </h2>
           </div>
 
@@ -75,7 +80,7 @@ export default function Blog() {
             {blogPosts.map((post) => (
               <Link
                 key={post.id}
-                href={`/blog/${post.slug}`}
+                href={`/${locale}/blog/${post.slug}`}
                 className="reveal group"
               >
                 <article className="bg-white border border-[#1A1714]/5 hover:border-[#B59F7E]/30 transition-all duration-300">
@@ -100,7 +105,7 @@ export default function Blog() {
                     </p>
                     <div className="mt-4 pt-4 border-t border-[#1A1714]/5">
                       <span className="text-[#B59F7E] text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                        Читать
+                        {dict.blog.read}
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

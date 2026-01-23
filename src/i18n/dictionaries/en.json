@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "benefits": "Benefits",
+    "contacts": "Contact",
+    "login": "Login",
+    "book": "Book Now"
+  },
+  "hero": {
+    "label": "Premium Women's Fitness",
+    "tagline": "Results. Comfort. Privacy.",
+    "description": "Private personal training in a premium space on Al-Farabi Avenue",
+    "book": "Book Now",
+    "learnMore": "Learn More",
+    "location": "Location",
+    "address": "Metropole Residence, Al-Farabi 41/7",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label": "About",
+    "title": "A space where you can",
+    "titleAccent": "be yourself",
+    "description1": "FORME is more than a fitness studio. It's a private premium space for women, where every detail is designed for your comfort and results.",
+    "description2": "No cameras. No prying eyes. Just you, your goals, and a professional trainer by your side.",
+    "stat1": "Privacy",
+    "stat2": "Comfort",
+    "stat3": "Results"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What we offer",
+    "service1": {
+      "title": "Personal Training",
+      "description": "Individual program tailored to your goals: weight loss, muscle gain, health improvement, or recovery.",
+      "feature1": "Personal trainer",
+      "feature2": "Individual program",
+      "feature3": "Progress tracking"
+    },
+    "service2": {
+      "title": "Premium Memberships",
+      "description": "Flexible visit options with full access to TechnoGym equipment and all club amenities.",
+      "feature1": "TechnoGym equipment",
+      "feature2": "Wellness zone",
+      "feature3": "Flexible schedule"
+    },
+    "service3": {
+      "title": "Kids Zone",
+      "description": "While you train, your child is comfortable and safe under nanny supervision.",
+      "feature1": "Professional nanny",
+      "feature2": "Safe space",
+      "feature3": "Educational games"
+    }
+  },
+  "benefits": {
+    "label": "Benefits",
+    "title": "Why choose",
+    "titleAccent": "FORME",
+    "premiumEquipment": "Premium Equipment",
+    "technoGymDesc": "TechnoGym — world leader in fitness industry",
+    "benefit1": {
+      "title": "Privacy",
+      "description": "No phones in the gym. Train without fear of ending up in someone's stories."
+    },
+    "benefit2": {
+      "title": "TechnoGym",
+      "description": "Premium equipment from the world leader. Cardio and strength zones."
+    },
+    "benefit3": {
+      "title": "Personal Approach",
+      "description": "Experienced trainers will create a program for your goals and needs."
+    },
+    "benefit4": {
+      "title": "Kids Zone",
+      "description": "Corner for children with a nanny — train peacefully."
+    },
+    "benefit5": {
+      "title": "Wellness",
+      "description": "Steam room, showers, cozy changing rooms for complete comfort."
+    }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Our",
+    "titleAccent": "blog",
+    "read": "Read",
+    "post1": {
+      "title": "How to combine fitness and motherhood: experience of our clients",
+      "excerpt": "Many moms face the question: how to find time for yourself when there's a little one at home? Our clients share their experience.",
+      "date": "November 10, 2025"
+    },
+    "post2": {
+      "title": "Why women should train strength, not just cardio",
+      "excerpt": "Strength training is not about 'bulking up'. It's about bone health, metabolism boost, and beautiful body definition.",
+      "date": "November 10, 2025"
+    },
+    "post3": {
+      "title": "How to start training after a long break: tips for women",
+      "excerpt": "Returning to sports after a pause can be difficult. We tell you how to do it right and without injuries.",
+      "date": "November 10, 2025"
+    }
+  },
+  "location": {
+    "label": "Contact",
+    "title": "Start your journey",
+    "titleAccent": "to results",
+    "addressLabel": "Address",
+    "addressName": "Metropole Residence",
+    "addressFull": "Al-Farabi, 41/7, block 7\nAlmaty, Kazakhstan",
+    "contactLabel": "Get in touch",
+    "socialLabel": "Social media",
+    "hoursLabel": "Working hours",
+    "weekdays": "Mon — Fri: 07:00 — 22:00",
+    "weekends": "Sat — Sun: 09:00 — 20:00",
+    "bookTraining": "Book a training",
+    "openMap": "Open map"
+  },
+  "footer": {
+    "description": "Private premium fitness space for women in Almaty.",
+    "navigation": "Navigation",
+    "contacts": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

@@ -2,8 +2,13 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import type { Dictionary } from '@/i18n/get-dictionary';
 
-export default function About() {
+interface AboutProps {
+  dict: Dictionary;
+}
+
+export default function About({ dict }: AboutProps) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -45,31 +50,28 @@ export default function About() {
           <div className="max-w-xl">
             <div className="reveal flex items-center gap-4 mb-8">
               <div className="line-accent" />
-              <span className="text-elegant text-[#B59F7E]">О клубе</span>
+              <span className="text-elegant text-[#B59F7E]">{dict.about.label}</span>
             </div>
 
             <h2 className="reveal heading-lg text-[#1A1714] mb-8">
-              Пространство, где вы можете{' '}
-              <span className="gradient-text">быть собой</span>
+              {dict.about.title}{' '}
+              <span className="gradient-text">{dict.about.titleAccent}</span>
             </h2>
 
             <p className="reveal text-[#1A1714]/60 text-lg leading-relaxed mb-6">
-              FORME — это больше, чем фитнес-студия. Это приватное премиальное
-              пространство для женщин, где каждая деталь продумана для вашего
-              комфорта и результата.
+              {dict.about.description1}
             </p>
 
             <p className="reveal text-[#1A1714]/60 leading-relaxed mb-12">
-              Никаких камер. Никаких посторонних взглядов. Только вы, ваши цели
-              и профессиональный тренер рядом.
+              {dict.about.description2}
             </p>
 
             {/* Stats */}
             <div className="reveal grid grid-cols-3 gap-6 pt-8 border-t border-[#1A1714]/10">
               {[
-                { number: '01', label: 'Приватность' },
-                { number: '02', label: 'Комфорт' },
-                { number: '03', label: 'Результат' },
+                { number: '01', label: dict.about.stat1 },
+                { number: '02', label: dict.about.stat2 },
+                { number: '03', label: dict.about.stat3 },
               ].map((stat) => (
                 <div key={stat.number}>
                   <span className="block text-3xl font-light text-[#B59F7E] mb-2">
