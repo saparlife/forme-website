@@ -12,9 +12,10 @@ import type { Locale } from '@/i18n/config';
 export default async function Home({
   params,
 }: {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const { locale: localeParam } = await params;
+  const locale = localeParam as Locale;
   const dict = getDictionary(locale);
 
   return (

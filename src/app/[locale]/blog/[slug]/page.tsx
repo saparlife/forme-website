@@ -9,7 +9,7 @@ import type { Locale } from '@/i18n/config';
 import { locales } from '@/i18n/config';
 
 interface Props {
-  params: Promise<{ slug: string; locale: Locale }>;
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -39,7 +39,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug, locale } = await params;
+  const { slug, locale: localeParam } = await params;
+  const locale = localeParam as Locale;
   const post = getBlogPost(slug);
   const dict = getDictionary(locale);
 
