@@ -35,7 +35,7 @@ export default function About({ dict }: AboutProps) {
         {/* Image - Full height */}
         <div className="relative h-[50vh] lg:h-auto order-1 lg:order-2 bg-[#B59F7E]/20">
           <Image
-            src="/images/index-pic_004.jpg"
+            src="/images/about-interior.jpg"
             alt="FORME Interior"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
