@@ -115,6 +115,36 @@
     "bookTraining": "Book a training",
     "openMap": "Open map"
   },
+  "cta": {
+    "consultation": {
+      "title": "Have questions?",
+      "subtitle": "We'll be happy to help you with any inquiries",
+      "button": "Message on WhatsApp"
+    },
+    "tour": {
+      "title": "Want to see the gym for yourself?",
+      "subtitle": "Book an individual tour of the club",
+      "button": "Book a tour"
+    },
+    "start": {
+      "title": "Ready to start?",
+      "subtitle": "Leave a request and we'll contact you within 15 minutes",
+      "button": "Submit request"
+    },
+    "trial": {
+      "title": "Sign up for a trial session",
+      "subtitle": "Try it yourself — first session is complimentary",
+      "button": "Sign up"
+    },
+    "form": {
+      "name": "Your name",
+      "phone": "Phone number",
+      "submit": "Submit request",
+      "sending": "Sending...",
+      "success": "Thank you! We'll contact you shortly",
+      "error": "An error occurred. Please try again"
+    }
+  },
   "footer": {
     "description": "Private premium fitness space for women in Almaty.",
     "navigation": "Navigation",
