@@ -62,8 +62,12 @@ export default function About({ dict }: AboutProps) {
               {dict.about.description1}
             </p>
 
-            <p className="reveal text-[#1A1714]/60 leading-relaxed mb-12">
+            <p className="reveal text-[#1A1714]/60 leading-relaxed mb-6">
               {dict.about.description2}
+            </p>
+
+            <p className="reveal text-[#1A1714]/60 leading-relaxed mb-12">
+              {dict.about.description3}
             </p>
 
             {/* Stats */}

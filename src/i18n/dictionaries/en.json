@@ -10,7 +10,7 @@
   "hero": {
     "label": "Premium Women's Fitness",
     "tagline": "Results. Comfort. Privacy.",
-    "description": "Private personal training in a premium space on Al-Farabi Avenue",
+    "description": "Train in a serene oasis for the select few in the heart of a bustling metropolis. The premium space on Al-Farabi is designed for your comfort and effective workouts.",
     "book": "Book Now",
     "learnMore": "Learn More",
     "location": "Location",
@@ -22,7 +22,8 @@
     "title": "A space where you can",
     "titleAccent": "be yourself",
     "description1": "FORME is more than a fitness studio. It's a private premium space for women, where every detail is designed for your comfort and results.",
-    "description2": "No cameras or prying eyes. Complete safety and a supportive atmosphere.",
+    "description2": "An exclusive club for women, combining the most advanced fitness technologies with five-star hotel comfort.",
+    "description3": "Experience a personalized approach and discover a new level of comfort. FORME professionals will take care of you.",
     "stat1": "Privacy",
     "stat2": "Comfort",
     "stat3": "Results"
@@ -129,7 +130,7 @@
     },
     "start": {
       "title": "Ready to start?",
-      "subtitle": "Leave a request and we'll contact you within 15 minutes",
+      "subtitle": "Leave your contact to get access to an exclusive women's community where fitness meets aesthetics and safety.",
       "button": "Submit request"
     },
     "trial": {
