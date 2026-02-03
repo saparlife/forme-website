@@ -103,7 +103,8 @@ export default function Location({ dict }: LocationProps) {
                   <p className="text-elegant text-[#B59F7E] mb-6">{dict.location.hoursLabel}</p>
                   <div className="space-y-2 text-white/50">
                     <p>{dict.location.weekdays}</p>
-                    <p>{dict.location.weekends}</p>
+                    <p>{dict.location.saturday}</p>
+                    <p>{dict.location.sunday}</p>
                   </div>
                 </div>
 

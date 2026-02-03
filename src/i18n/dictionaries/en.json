@@ -22,7 +22,7 @@
     "title": "A space where you can",
     "titleAccent": "be yourself",
     "description1": "FORME is more than a fitness studio. It's a private premium space for women, where every detail is designed for your comfort and results.",
-    "description2": "No cameras. No prying eyes. Just you, your goals, and a professional trainer by your side.",
+    "description2": "No cameras or prying eyes. Complete safety and a supportive atmosphere.",
     "stat1": "Privacy",
     "stat2": "Comfort",
     "stat3": "Results"
@@ -38,18 +38,18 @@
       "feature3": "Progress tracking"
     },
     "service2": {
-      "title": "Premium Memberships",
-      "description": "Flexible visit options with full access to TechnoGym equipment and all club amenities.",
+      "title": "Premium Space",
+      "description": "Flexible visit options with full access to the gym and all club amenities.",
       "feature1": "TechnoGym equipment",
       "feature2": "Wellness zone",
-      "feature3": "Flexible schedule"
+      "feature3": "Unlimited visits"
     },
     "service3": {
-      "title": "Kids Zone",
-      "description": "While you train, your child is comfortable and safe under nanny supervision.",
-      "feature1": "Professional nanny",
-      "feature2": "Safe space",
-      "feature3": "Educational games"
+      "title": "Women's Community",
+      "description": "A club for women who value personal space, a mindful approach to training, and a respectful environment.",
+      "feature1": "Calm and safe atmosphere",
+      "feature2": "Comfortable communication",
+      "feature3": "Intimate setting"
     }
   },
   "benefits": {
@@ -57,26 +57,26 @@
     "title": "Why choose",
     "titleAccent": "FORME",
     "premiumEquipment": "Premium Equipment",
-    "technoGymDesc": "TechnoGym — world leader in fitness industry",
+    "technoGymDesc": "The premium TechnoGym equipment line offers balanced resistance and perfect biomechanics combined with aesthetics.",
     "benefit1": {
       "title": "Privacy",
-      "description": "No phones in the gym. Train without fear of ending up in someone's stories."
+      "description": "Train without fear of ending up in someone's stories. Filming visitors is prohibited by club policy."
     },
     "benefit2": {
       "title": "TechnoGym",
-      "description": "Premium equipment from the world leader. Cardio and strength zones."
+      "description": "Premium equipment from the world leader. Cardio and strength training zones."
     },
     "benefit3": {
       "title": "Personal Approach",
       "description": "Experienced trainers will create a program for your goals and needs."
     },
     "benefit4": {
-      "title": "Kids Zone",
-      "description": "Corner for children with a nanny — train peacefully."
-    },
-    "benefit5": {
       "title": "Wellness",
       "description": "Steam room, showers, cozy changing rooms for complete comfort."
+    },
+    "benefit5": {
+      "title": "Aesthetics as Motivation",
+      "description": "Interior designed down to the smallest detail, equipment with exclusive finishing, and a signature scent created specifically for the club's style."
     }
   },
   "blog": {
@@ -110,8 +110,9 @@
     "contactLabel": "Get in touch",
     "socialLabel": "Social media",
     "hoursLabel": "Working hours",
-    "weekdays": "Mon — Fri: 07:00 — 22:00",
-    "weekends": "Sat — Sun: 09:00 — 20:00",
+    "weekdays": "Mon — Fri: 07:00 — 23:00",
+    "saturday": "Sat: 08:00 — 21:00",
+    "sunday": "Sun: closed",
     "bookTraining": "Book a training",
     "openMap": "Open map"
   },
