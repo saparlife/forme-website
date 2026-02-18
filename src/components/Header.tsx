@@ -103,7 +103,7 @@ export default function Header({ variant = 'dark', dict, locale }: HeaderProps) 
             <Link href={`/${locale}`} className="relative z-10">
               <Image
                 src="/images/logo.png"
-                alt="FORME"
+                alt="FORMÉ"
                 width={100}
                 height={32}
                 className={`h-6 md:h-7 w-auto transition-all duration-500 ${

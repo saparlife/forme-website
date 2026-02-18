@@ -28,7 +28,7 @@ const seoData: Record<Locale, {
   ogLocale: string;
 }> = {
   ru: {
-    title: "FORME — Премиальный женский фитнес-клуб в Алматы | Персональные тренировки",
+    title: "FORMÉ — Премиальный женский фитнес-клуб в Алматы | Персональные тренировки",
     description: "Приватный премиум фитнес-клуб для женщин в ЖК Metropole, Алматы. Персональные тренировки на TechnoGym. Без камер, полная приватность. Детская зона с няней. Записаться: +7 702 222 25 66",
     keywords: [
       "женский фитнес клуб Алматы",
@@ -50,7 +50,7 @@ const seoData: Record<Locale, {
     ogLocale: "ru_RU",
   },
   kk: {
-    title: "FORME — Алматыдағы премиум әйелдер фитнес-клубы | Жеке жаттығулар",
+    title: "FORMÉ — Алматыдағы премиум әйелдер фитнес-клубы | Жеке жаттығулар",
     description: "Алматы, ЖК Metropole-дегі әйелдерге арналған жеке премиум фитнес-клуб. TechnoGym жабдығында жеке жаттығулар. Камерасыз, толық құпиялық. Күтушімен балалар бөлмесі. Жазылу: +7 702 222 25 66",
     keywords: [
       "әйелдер фитнес клубы Алматы",
@@ -71,7 +71,7 @@ const seoData: Record<Locale, {
     ogLocale: "kk_KZ",
   },
   en: {
-    title: "FORME — Premium Women's Fitness Club in Almaty | Personal Training",
+    title: "FORMÉ — Premium Women's Fitness Club in Almaty | Personal Training",
     description: "Private premium fitness club for women in Metropole Residence, Almaty. Personal training on TechnoGym equipment. No cameras, complete privacy. Kids zone with nanny. Book: +7 702 222 25 66",
     keywords: [
       "women fitness club Almaty",
@@ -107,13 +107,13 @@ export async function generateMetadata({
     metadataBase: new URL("https://forme.kz"),
     title: {
       default: seo.title,
-      template: "%s | FORME",
+      template: "%s | FORMÉ",
     },
     description: seo.description,
     keywords: seo.keywords,
-    authors: [{ name: "FORME", url: "https://forme.kz" }],
-    creator: "FORME",
-    publisher: "FORME",
+    authors: [{ name: "FORMÉ", url: "https://forme.kz" }],
+    creator: "FORMÉ",
+    publisher: "FORMÉ",
     formatDetection: {
       email: true,
       address: true,
@@ -133,7 +133,7 @@ export async function generateMetadata({
       locale: seo.ogLocale,
       alternateLocale: locales.filter(l => l !== locale).map(l => seoData[l].ogLocale),
       url: `https://forme.kz/${locale}`,
-      siteName: "FORME",
+      siteName: "FORMÉ",
       title: seo.title,
       description: seo.description,
       images: [
@@ -141,7 +141,7 @@ export async function generateMetadata({
           url: "https://forme.kz/images/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: locale === 'ru' ? "FORME — Премиальный женский фитнес-клуб" : locale === 'kk' ? "FORME — Премиум әйелдер фитнес-клубы" : "FORME — Premium Women's Fitness Club",
+          alt: locale === 'ru' ? "FORMÉ — Премиальный женский фитнес-клуб" : locale === 'kk' ? "FORMÉ — Премиум әйелдер фитнес-клубы" : "FORMÉ — Premium Women's Fitness Club",
         },
       ],
     },
@@ -190,9 +190,9 @@ export async function generateMetadata({
 // JSON-LD Structured Data with locale support
 function getJsonLd(locale: Locale) {
   const names: Record<Locale, string> = {
-    ru: "FORME — Премиальный женский фитнес-клуб",
-    kk: "FORME — Премиум әйелдер фитнес-клубы",
-    en: "FORME — Premium Women's Fitness Club",
+    ru: "FORMÉ — Премиальный женский фитнес-клуб",
+    kk: "FORMÉ — Премиум әйелдер фитнес-клубы",
+    en: "FORMÉ — Premium Women's Fitness Club",
   };
 
   const descriptions: Record<Locale, string> = {
@@ -208,7 +208,7 @@ function getJsonLd(locale: Locale) {
         "@type": "SportsActivityLocation",
         "@id": "https://forme.kz/#organization",
         name: names[locale],
-        alternateName: "FORME",
+        alternateName: "FORMÉ",
         description: descriptions[locale],
         url: `https://forme.kz/${locale}`,
         telephone: "+77022222566",
@@ -264,7 +264,7 @@ function getJsonLd(locale: Locale) {
         "@type": "WebSite",
         "@id": "https://forme.kz/#website",
         url: "https://forme.kz",
-        name: "FORME",
+        name: "FORMÉ",
         description: descriptions[locale],
         publisher: { "@id": "https://forme.kz/#organization" },
         inLanguage: locale === 'kk' ? 'kk-KZ' : locale === 'en' ? 'en-US' : 'ru-RU',

@@ -21,7 +21,7 @@ export default function Hero({ dict }: HeroProps) {
       <div className="absolute inset-0">
         <Image
           src="/images/VIEW-0130000.jpg"
-          alt="FORME Premium Fitness"
+          alt="FORMÉ Premium Fitness"
           fill
           className="object-cover opacity-60"
           priority

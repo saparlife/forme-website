@@ -36,7 +36,7 @@ export default function About({ dict }: AboutProps) {
         <div className="relative h-[50vh] lg:h-auto order-1 lg:order-2 bg-[#B59F7E]/20">
           <Image
             src="/images/about-interior.jpg"
-            alt="FORME Interior"
+            alt="FORMÉ Interior"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
