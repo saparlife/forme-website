@@ -30,7 +30,7 @@ export default function Footer({ dict, locale }: FooterProps) {
             <div className="lg:col-span-1">
               <Image
                 src="/images/logo.png"
-                alt="FORMÉ"
+                alt="FORMĒ"
                 width={100}
                 height={32}
                 className="h-6 w-auto brightness-0 invert mb-6"
@@ -109,7 +109,7 @@ export default function Footer({ dict, locale }: FooterProps) {
           {/* Bottom */}
           <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/30 text-xs">
-              &copy; {currentYear} FORMÉ. {dict.footer.rights}
+              &copy; {currentYear} FORMĒ. {dict.footer.rights}
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">

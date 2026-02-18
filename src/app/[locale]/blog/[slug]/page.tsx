@@ -123,7 +123,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {locale === 'ru' ? 'Готовы начать тренироваться?' : locale === 'kk' ? 'Жаттығуды бастауға дайынсыз ба?' : 'Ready to start training?'}
               </h3>
               <p className="text-white/60 mb-6">
-                {locale === 'ru' ? 'Запишитесь на пробную тренировку в FORMÉ' : locale === 'kk' ? 'FORMÉ-да сынақ жаттығуға жазылыңыз' : 'Book a trial training at FORMÉ'}
+                {locale === 'ru' ? 'Запишитесь на пробную тренировку в FORMĒ' : locale === 'kk' ? 'FORMĒ-да сынақ жаттығуға жазылыңыз' : 'Book a trial training at FORMĒ'}
               </p>
               <a
                 href="https://wa.me/77022222566"

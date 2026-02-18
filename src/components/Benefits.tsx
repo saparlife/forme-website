@@ -59,7 +59,7 @@ export default function Benefits({ dict }: BenefitsProps) {
         <div className="relative h-[50vh] lg:h-auto bg-[#B59F7E]/20">
           <Image
             src="/images/technogym.jpg"
-            alt="TechnoGym equipment at FORMÉ"
+            alt="TechnoGym equipment at FORMĒ"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

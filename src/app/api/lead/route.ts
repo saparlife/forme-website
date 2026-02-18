@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
     const message = [
-      '📋 <b>Новая заявка с сайта FORMÉ (forme.kz)</b>',
+      '📋 <b>Новая заявка с сайта FORMĒ (forme.kz)</b>',
       '',
       `👤 <b>Имя:</b> ${escapeHtml(name)}`,
       `📞 <b>Телефон:</b> ${escapeHtml(phone)}`,
