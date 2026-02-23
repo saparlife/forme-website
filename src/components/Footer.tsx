@@ -112,12 +112,12 @@ export default function Footer({ dict, locale }: FooterProps) {
               &copy; {currentYear} FORMĒ. {dict.footer.rights}
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
+              <Link href={`/${locale}/privacy`} className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
                 {dict.footer.privacy}
-              </a>
-              <a href="#" className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
+              </Link>
+              <Link href={`/${locale}/delete-account`} className="text-white/30 text-xs hover:text-[#B59F7E] transition-colors">
                 {dict.footer.terms}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

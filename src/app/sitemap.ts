@@ -38,5 +38,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...mainPages, ...blogPages];
+  // Legal pages for each locale
+  const legalPages = ['privacy', 'delete-account'].flatMap((page) =>
+    locales.map((locale) => ({
+      url: `${baseUrl}/${locale}/${page}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
+      alternates: {
+        languages: {
+          ru: `${baseUrl}/ru/${page}`,
+          kk: `${baseUrl}/kk/${page}`,
+          en: `${baseUrl}/en/${page}`,
+        },
+      },
+    }))
+  );
+
+  return [...mainPages, ...blogPages, ...legalPages];
 }

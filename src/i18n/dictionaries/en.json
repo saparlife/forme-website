@@ -154,6 +154,78 @@
     "followUs": "Follow us",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Delete Account"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 23, 2026",
+    "intro": "FORMĒ LLP (hereinafter referred to as \"we\", \"the Company\") respects your privacy and is committed to protecting your personal data. This Policy describes what data we collect, how we use it, and how we protect it.",
+    "section1Title": "1. What Data We Collect",
+    "section1Text": "When using our mobile application and website, we may collect the following data:",
+    "section1Items": [
+      "First and last name",
+      "Phone number",
+      "Email address",
+      "Date of birth and gender",
+      "Fitness club visit data (check-in/check-out times)",
+      "Membership information",
+      "Profile photo (if you add one)",
+      "Device identifier for push notifications"
+    ],
+    "section2Title": "2. How We Use Your Data",
+    "section2Text": "We use the collected data to:",
+    "section2Items": [
+      "Provide access to fitness club services",
+      "Manage your membership and bookings",
+      "Send notifications about bookings, promotions, and club news",
+      "Track visit statistics and training progress",
+      "Operate the loyalty program (bonuses, cashback)",
+      "Improve the quality of our services"
+    ],
+    "section3Title": "3. Data Sharing with Third Parties",
+    "section3Text": "We do not sell or share your personal data with third parties, except as required by the laws of the Republic of Kazakhstan, and to ensure service operation (hosting, push notifications).",
+    "section4Title": "4. Data Storage and Security",
+    "section4Text": "Your data is stored on secure servers using encryption. We take all necessary technical and organizational measures to prevent unauthorized access to your data. Data is retained for the duration of your account and 30 days after its deletion.",
+    "section5Title": "5. Your Rights",
+    "section5Text": "You have the right to:",
+    "section5Items": [
+      "Request access to your personal data",
+      "Correct inaccurate data",
+      "Request deletion of your data",
+      "Withdraw consent to data processing",
+      "Opt out of marketing notifications"
+    ],
+    "section6Title": "6. Cookies",
+    "section6Text": "Our website may use cookies to improve user experience. You can disable cookies in your browser settings.",
+    "section7Title": "7. Contact Us",
+    "section7Text": "For privacy inquiries, you can contact us at:",
+    "contactEmail": "Email: Forme.gym@list.ru",
+    "contactPhone": "Phone: +7 702 222 25 66",
+    "contactAddress": "Address: Almaty, Al-Farabi 41/7, Metropole Residence"
+  },
+  "deleteAccount": {
+    "title": "Personal Data Deletion",
+    "subtitle": "Request to delete your account and personal data",
+    "intro": "In accordance with the data protection laws of the Republic of Kazakhstan, you have the right to request complete deletion of your data from our system.",
+    "whatDeletedTitle": "What Data Will Be Deleted",
+    "whatDeletedItems": [
+      "Personal data (name, phone, email, date of birth)",
+      "Fitness club visit history",
+      "Membership and booking data",
+      "Bonus balance and transaction history",
+      "Profile photo",
+      "Device push tokens"
+    ],
+    "processTitle": "Deletion Process",
+    "processStep1": "Send a deletion request via email or WhatsApp, providing the phone number linked to your account",
+    "processStep2": "We will verify your identity within 1 business day",
+    "processStep3": "Your data will be completely deleted within 30 days",
+    "processStep4": "You will receive confirmation of data deletion",
+    "noteTitle": "Please Note",
+    "noteText": "Account recovery is not possible after data deletion. If you have an active membership, we recommend waiting until it expires before deleting your account. Data required for contractual obligations or legal requirements may be retained for the period established by law.",
+    "requestTitle": "Submit a Request",
+    "requestEmail": "Send an email",
+    "requestWhatsapp": "Message on WhatsApp",
+    "requestMessage": "Hello, I would like to request deletion of my personal data and account in the Formé app. My phone number: "
   }
 }
